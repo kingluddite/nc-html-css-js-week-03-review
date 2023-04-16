@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  The double exclamation mark (!!) in JavaScript is a shorthand way to convert a value to a boolean data type.
+
+  When you use the double exclamation mark before a value, it essentially coerces that value into a boolean. Here's how
+  it works:
+
+  The first exclamation mark negates the value. If the value is truthy (i.e. not false, 0, NaN, null, undefined, or an
+  empty string), it becomes false. If the value is falsy, it becomes true.
+  The second exclamation mark negates the negation, effectively converting the value back to its original boolean
+  representation.
+  <script>
+    //     In this example, myValue is a truthy value (because it's a non-zero number). When we apply the double exclamation mark to it, it becomes false (because the first exclamation mark negates it), which is then negated again to become true. So myBoolean is set to true.
+
+    // The double exclamation mark can be a handy shortcut when you need to convert a value to a boolean, but it's not always necessary. For example, in a conditional statement like if (myValue) { ... }, the value of myValue will automatically be coerced to a boolean without needing to use the double exclamation mark.
+
+    const myValue = 5;
+    const myBoolean = !!myValue;
+
+    console.log(typeof myBoolean); // "boolean"
+    console.log(myBoolean); // true
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  In JavaScript, every value has an inherent boolean value, which is either true or false. Values that are considered
+  true are called "truthy", while values that are considered false are called "falsy".
+
+  Here are the values in JavaScript that are considered falsy:
+
+  false
+  0 (numeric zero)
+  "" (empty string)
+  null
+  undefined
+  NaN (Not a Number)
+  All other values in JavaScript are considered truthy. This includes non-empty strings, non-zero numbers, arrays,
+  objects, functions, and more.
+
+  The concept of truthy and falsy values is often used in conditional statements, where a value is evaluated as either
+  true or false. For example, in an if statement, a condition that evaluates to a truthy value will execute the block of
+  code inside the statement, while a condition that evaluates to a falsy value will skip the block of code.
+
+  Here's an example of using truthy and falsy values in a conditional statement:
+
+  javascript
+  Copy code
+  var name = "";
+
+  if (name) {
+  console.log("Hello, " + name + "!");
+  } else {
+  console.log("Please enter your name.");
+  }
+  In this example, the variable name is assigned an empty string value, which is a falsy value. When the if statement
+  checks the value of name, it evaluates to false because it is a falsy value.
+
+  As a result, the program executes the code inside the else block and prints the message "Please enter your name." to
+  the console.
+
+
+  <script>
+    //   In this example, the variable name is assigned an empty string value, which is a falsy value. When the if statement checks the value of name, it evaluates to false because it is a falsy value.
+
+    // As a result, the program executes the code inside the else block and prints the message "Please enter your name." to the console.
+    let name = "sean";
+
+    if (name == true) {
+      console.log("Hello, " + name + "!");
+    } else {
+      console.log("Please enter your name.");
+    }
+
+
+  </script>
+
+
+
+</body>
+
+</html>
